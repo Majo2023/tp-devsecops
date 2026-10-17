@@ -1,0 +1,28 @@
+# Gitleaks configuration for DevSecOps TP
+# https://github.com/gitleaks/gitleaks
+
+title = "Gitleaks configuration for democyber"
+
+[config]
+# Number of concurrent workers to use when scanning
+workers = 4
+
+# Maximum number of characters to scan in a line
+# Setting this high to scan all lines
+max_target_size = 10000
+
+[allowlist]
+# Allowlist patterns that should be ignored
+paths = [
+    '''\.git''',
+    '''node_modules''',
+    '''target''',
+    '''dist''',
+]
+
+# Gitleaks reports are saved to this file by default
+[report]
+# Path to save the report
+path = "gitleaks-report.json"
+# Format of the report (json, json, csv, template, sarif)
+format = "json"
