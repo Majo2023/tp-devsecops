@@ -20,3 +20,6 @@ target/
 
 # Uploads (uncomment if needed)
 #uploads/
+
+# Gitleaks
+gitleaks-report.json

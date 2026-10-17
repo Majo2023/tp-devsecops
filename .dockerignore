@@ -1,0 +1,9 @@
+# Maven build output - excluded to speed up context (Dockerfile copies from target/)
+target/
+
+# Git
+.git
+
+# IDE
+.idea/
+.vscode/
