@@ -1,9 +1,12 @@
-# Maven build output - excluded to speed up context (Dockerfile copies from target/)
-target/
-
-# Git
+# Git directory excluded from Docker context
 .git
 
 # IDE
 .idea/
 .vscode/
+
+# Logs
+*.log
+
+# Gitleaks
+gitleaks-report.json
