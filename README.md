@@ -12,3 +12,10 @@ Application Java Spring Boot pour le TP DevSecOps.
 - `src/main/resources/` : Configuration
 - `Dockerfile` : Image Docker
 - `.github/workflows/ci.yml` : Pipeline CI/CD
+
+## Déploiement
+
+- Docker Hub: madjid45/democyber:latest
+- GitHub: https://github.com/Majo2023/tp-devsecops
+- CI/CD: GitHub Actions
+- Security: Gitleaks
