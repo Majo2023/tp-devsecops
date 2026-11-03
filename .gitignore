@@ -21,5 +21,8 @@ target/
 # Uploads (uncomment if needed)
 #uploads/
 
-# Gitleaks
+# Security reports (generated in CI, uploaded as artifacts)
 gitleaks-report.json
+results.sarif
+trivy-results.sarif
+trivy-report.txt
