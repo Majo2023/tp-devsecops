@@ -128,3 +128,13 @@ jobs:
       # 12 - Push Docker image (uniquement si le scan Trivy est passé)
       - name: Push Docker image
         run: docker push $DOCKER_IMAGE_NAME
+# Run SonarCloud scan
+      # Run SonarCloud scan
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
